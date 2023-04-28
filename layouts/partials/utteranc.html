@@ -1,0 +1,11 @@
+{{ if .Site.Params.Utteranc.enable }}
+<script src="https://utteranc.es/client.js"
+        repo="{{ .Site.Params.Utteranc.owner }}/{{ .Site.Params.Utteranc.repo }}",
+        issue-term="title"
+        label="💬"
+        theme="{{ .Site.Params.Utteranc.theme }}",
+        crossorigin="anonymous"
+        async>
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+{{ end }}
