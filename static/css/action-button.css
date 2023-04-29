@@ -1,47 +1,65 @@
 #action-botton {
-    position: fixed;
-    height: 2.5rem;
-    width: 2.5rem;
-    right: 1rem;
-    bottom: 1rem;
-    font-family: monospace;
-    overflow: hidden;
-  }
-  
-  #action-botton .action-wrapper {
-    position: absolute;
-    height: 2.5rem;
-    width: 2.5rem;
-    top: 0;
-    transition: top 0.2s;
-  }
-  
-  #action-botton .action-wrapper:hover {
-    top: -2.5rem;
-  }
-  
-  #action-botton .action-wrapper .action {
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #action-botton .action-wrapper .action span {
-    text-decoration: line-through;
-  }
-  
-  #action-botton .action-wrapper .meter {
-    user-select: none;
-  }
-  
-  #action-botton .action-wrapper .up {
-    padding: 0;
-  }
-  
-  #action-botton .action-wrapper .up .icon {
-    height: 1.5em;
-    width: 1.5em;
-    padding: 0.5em;
-  }
+  position: fixed;
+  height: 2.5rem;
+  width: 2.5rem;
+  right: 1rem;
+  bottom: 1rem;
+  font-family: iosevka,microsoft yahei,monospace;
+  overflow: hidden
+}
+
+#action-botton .action-wrapper {
+  position: absolute;
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 0;
+  transition: top .2s
+}
+
+#action-botton .action-wrapper:hover {
+  top: -2.5rem
+}
+
+#action-botton .action-wrapper .action {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#action-botton .action-wrapper .action span {
+  text-decoration: line-through
+}
+
+#action-botton .action-wrapper .meter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none
+}
+
+#action-botton .action-wrapper .up {
+  padding: 0
+}
+
+#action-botton .action-wrapper .up .icon {
+  height: 1.5em;
+  width: 1.5em;
+  padding: .5em
+}
+
+#action-botton {
+  background-color: #24292e;
+  color: #fff;
+  fill: #fff
+}
+
+#action-botton .up {
+  background-color: #24292e;
+}
+
+#action-botton .up .icon {
+  color: #0366d6;
+  fill: #fff;
+  transform: scale(4)
+}
