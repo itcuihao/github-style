@@ -3,7 +3,7 @@ $(function() {
     var client = algoliasearch("X98HP3O6IB", "73d1d78ec2d38f91803298227a92819d");
     var index = client.initIndex("blog");
     autocomplete(
-      "#aa-search-input",
+      "#aa-input-search",
       { hint: false },
       {
         source: autocomplete.sources.hits(index, { hitsPerPage: 8 }),

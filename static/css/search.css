@@ -99,3 +99,11 @@
 .aa-suggestion a:hover{
   color: #4B89DC;
 }
+
+#search-clear {
+  display: none
+}
+
+.open #search-clear:hover {
+  color: #ff6b6b
+}

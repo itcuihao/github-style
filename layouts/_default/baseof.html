@@ -5,19 +5,7 @@
   {{ partial "header" . }}
   {{ block "content" . }}{{ end }}
   {{ partial "footer.html" . }}
-  
-  <!-- go to top -->
-  <div id="action-botton">
-    <div class="action-wrapper">
-      <div class="action meter">
-        <span id="progress_meter">JS</span>
-      </div>
-      <a href="#top" class="action up no-dot">
-        <svg xmlns='http://www.w3.org/2000/svg' class='icon' viewBox='0 0 512 512'><title>Arrow Up</title><path fill='none' stroke='currentColor' stroke-linecap='square' stroke-miterlimit='10' stroke-width='96' d='M112 244l144-144 144 144M256 120v292'/></svg>
-      </a>
-    </div>
-  </div>
-
+  {{ partial "top.html" . }}
 </body>
 
 {{ partial "script.html" . }}
