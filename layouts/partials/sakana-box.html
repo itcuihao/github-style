@@ -1,4 +1,5 @@
 
+{{ if .Site.Params.Sakana.enable }}
 <div class="global-ui">
     <div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-2a01419c data-v-2a01419c>
         <svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-2a01419c>
@@ -22,3 +23,4 @@
         <script async="async" onload="initSakanaWidget()" src="https://cdn.jsdelivr.net/npm/sakana"></script>
     </div>
   </div>
+  {{ end }}
