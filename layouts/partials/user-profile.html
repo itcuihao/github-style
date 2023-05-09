@@ -173,6 +173,10 @@
             <img alt="@rss" width="32" height="32" src="{{ "images/rss.png" | absURL }}" class="avatar">
           </a>
           {{ end }}
+
+          {{ if .Site.Params.reward }}
+          {{ partial "reward.html" . }}
+          {{ end }}
          </div>
         </div>
       </div>
